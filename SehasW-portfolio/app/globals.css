@@ -1385,3 +1385,128 @@ img {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* GLOBAL LETTER SPACING CONTROL */
+
+:root {
+  --tracking-adjustment: 0.03em;
+}
+
+body {
+  letter-spacing: var(--tracking-adjustment);
+}
+
+/* Preserve existing typography proportions */
+
+.eyebrow {
+  letter-spacing: calc(-0.025em + var(--tracking-adjustment));
+}
+
+.display-heading {
+  letter-spacing: calc(-0.076em + var(--tracking-adjustment));
+}
+
+.hero-copy-left h1 {
+  letter-spacing: calc(-0.073em + var(--tracking-adjustment));
+}
+
+.hero-copy-left h1 .hero-kicker {
+  letter-spacing: calc(-0.06em + var(--tracking-adjustment));
+}
+
+.hero-copy-left p {
+  letter-spacing: calc(-0.02em + var(--tracking-adjustment));
+}
+
+.hero-copy-right .right-kicker {
+  letter-spacing: calc(-0.026em + var(--tracking-adjustment));
+}
+
+.hero-copy-right .right-title {
+  letter-spacing: calc(-0.07em + var(--tracking-adjustment));
+}
+
+.hero-giant {
+  letter-spacing: calc(-0.092em + var(--tracking-adjustment));
+}
+
+.expertise-strip > span {
+  letter-spacing: calc(-0.02em + var(--tracking-adjustment));
+}
+
+.about-description {
+  letter-spacing: calc(-0.028em + var(--tracking-adjustment));
+}
+
+.lead-description {
+  letter-spacing: calc(-0.025em + var(--tracking-adjustment));
+}
+
+.project-category {
+  letter-spacing: calc(-0.015em + var(--tracking-adjustment));
+}
+
+.project-card h3 {
+  letter-spacing: calc(-0.05em + var(--tracking-adjustment));
+}
+
+.thinking-right > p:first-child {
+  letter-spacing: calc(-0.026em + var(--tracking-adjustment));
+}
+
+.good-ideas {
+  letter-spacing: calc(-0.08em + var(--tracking-adjustment));
+}
+
+.service-number {
+  letter-spacing: calc(-0.03em + var(--tracking-adjustment));
+}
+
+.service-card h3 {
+  letter-spacing: calc(-0.077em + var(--tracking-adjustment));
+}
+
+.service-description {
+  letter-spacing: calc(-0.028em + var(--tracking-adjustment));
+}
+
+.archive-category {
+  letter-spacing: calc(-0.05em + var(--tracking-adjustment));
+}
+
+.archive-name strong {
+  letter-spacing: calc(-0.075em + var(--tracking-adjustment));
+}
+
+.contact-side > p {
+  letter-spacing: calc(-0.025em + var(--tracking-adjustment));
+}
+
+.case-intro-bottom {
+  letter-spacing: calc(0.02em + var(--tracking-adjustment));
+}
+
+.case-pending h2 {
+  letter-spacing: calc(-0.07em + var(--tracking-adjustment));
+}
+
+.case-bottom-nav strong {
+  letter-spacing: calc(-0.05em + var(--tracking-adjustment));
+}
+
+/* DISABLE TEXT AND IMAGE SELECTION */
+
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* PREVENT IMAGE DRAGGING */
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
